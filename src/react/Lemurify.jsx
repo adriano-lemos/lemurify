@@ -12,7 +12,7 @@ module.exports = React.createClass({
             visibility: 'collapse'
         };
 
-        lemosGenerator.generate('c', this.props.wordOfDay);
+        lemosGenerator.generate('c', '“' + this.props.wordOfDay + '”');
         return (
             <div style={divStyle}>
                 <img src="" id="imagem" />
