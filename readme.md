@@ -19,3 +19,9 @@ npm run build-js
 ```
 npm run watch-js
 ```
+
+### Publicar no github pages
+
+```
+./publish.sh
+```
