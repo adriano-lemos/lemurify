@@ -1,4 +1,4 @@
-# 50Centify
+# Lemurify
 
 ## Commands
 
