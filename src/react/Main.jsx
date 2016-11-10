@@ -12,7 +12,8 @@ module.exports = React.createClass({
             "Se... Se... Se... ...se minha mãe tivesse oito peitos eu seria um bacurim!",
             "Pra cima de mala só poeira",
             "Você pra mim é problema seu",
-            "Há três tipos de problema: o meu, o nosso e o seu. Esse não é nem meu nem nosso."
+            "Há três tipos de problema: o meu, o nosso e o seu. Esse não é nem meu nem nosso.",
+            "Na teoria, a prática é linda. Na prática, a teoria é uma porcaria!"
         ];
         return {
             wordOfDay: frases[Math.floor(Math.random()*frases.length)]
