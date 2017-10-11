@@ -30,7 +30,7 @@
     ]
   },
   "scripts": {
-    "build-js": "browserify -t reactify src/main.js | uglifyjs > dist/main.js -d",
+    "build-js": "browserify -t reactify src/main.js | ./node_modules/uglify-js/bin/uglifyjs > dist/main.js",
     "watch-js": "watchify src/main.js -o dist/main.js -dv & node server.js"
   },
   "main": "js/main.js",

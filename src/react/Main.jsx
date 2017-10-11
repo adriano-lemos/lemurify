@@ -15,8 +15,30 @@ module.exports = React.createClass({
             "Há três tipos de problema: o meu, o nosso e o seu. Esse não é nem meu nem nosso."
         ];
         return {
-            wordOfDay: frases[Math.floor(Math.random()*frases.length)]
+            wordOfDay: frases[Math.floor(Math.random()*frases.length)],
+            phrases: frases,
+            index: 0,
+            interval: 0
         }
+    },
+
+    componentDidMount: function() {
+        var intervalo = setInterval(function() {
+            var index = Math.floor(this.state.index + 1/this.state.phrases.length) > 0 ? 0 : this.state.index + 1;
+            var chosenPhrase = this.state.phrases[(index)];
+            this.setState({
+                wordOfDay: chosenPhrase,
+                index: index
+            })
+        }.bind(this), 5000);
+
+        this.setState({
+            interval: intervalo
+        });
+    },
+
+    componentWillUnmount: function() {
+        clearInterval(this.state.interval);
     },
 
     render: function() {
