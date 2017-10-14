@@ -24,7 +24,7 @@ module.exports = React.createClass({
 
     componentDidMount: function() {
         var intervalo = setInterval(function() {
-            var index = Math.floor(this.state.index + 1/this.state.phrases.length) > 0 ? 0 : this.state.index + 1;
+            var index = Math.floor((this.state.index + 1)/this.state.phrases.length) > 0 ? 0 : this.state.index + 1;
             var chosenPhrase = this.state.phrases[(index)];
             this.setState({
                 wordOfDay: chosenPhrase,
