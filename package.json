@@ -7,7 +7,7 @@
     "connect": "^3.4.0",
     "fabric-browserify": "^1.4.13",
     "fabric-browseronly": "^1.6.0",
-    "jquery": "^2.1.4",
+    "jquery": "^3.0.0",
     "money": "^0.2.0",
     "qs": "^5.1.0",
     "react": "^0.13.3",
